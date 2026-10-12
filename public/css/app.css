@@ -1,0 +1,15 @@
+/* Swavy Fix screens. */
+.logo { --sub-bg: var(--coral); --sub-ink: #fff; }
+.how { display: grid; gap: 12px; } @media (min-width: 760px) { .how { grid-template-columns: repeat(3, 1fr); } }
+.how .card { margin: 0; } .how-n { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: var(--lime); color: var(--lime-ink); font-weight: 900; margin-bottom: 8px; }
+.area-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } @media (min-width: 700px) { .area-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.area-grid .pick { justify-content: flex-start; font-size: 16px; min-height: 56px; padding: 12px 14px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; font-size: 14px; color: var(--muted); } .facts span { display: inline-flex; align-items: center; gap: 5px; } .facts b { color: var(--text); }
+.card.artisan + .card.artisan { margin-top: 12px; }
+.job-grid { display: grid; gap: 14px; } .job-grid > div > * + * { margin-top: 14px; } .job-grid .card + .card { margin-top: 14px; }
+@media (min-width: 900px) { .job-grid { grid-template-columns: 1.15fr .85fr; align-items: start; } .job-grid > div:first-child { position: sticky; top: 84px; } }
+.itemrow { display: grid; grid-template-columns: 1fr 56px 96px 44px; gap: 6px; margin-bottom: 8px; } .itemrow .input { min-height: 46px; padding: 10px; font-size: 15px; }
+.photos.big { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.photos .rm { position: absolute; top: 4px; right: 4px; width: 32px; height: 32px; border-radius: 10px; }
+.guide { display: grid; gap: 14px; } @media (min-width: 800px) { .guide { grid-template-columns: 1fr 1fr; } } .guide .card { margin: 0; }
+.list-links { padding: 4px 16px; }
